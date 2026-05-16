@@ -1,9 +1,16 @@
+Copy this entire code into:
+
+```text
+ley82-2026/nos-fallaron/index.html
+```
+
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ley 82-2026 (PC 310)</title>
+  <title>Nos Fallaron - Ley 82-2026</title>
 
   <style>
     :root {
@@ -119,7 +126,7 @@
 <body>
   <main>
     <section class="editable-content">
-      <h1>Deroga la Ley 82-2026</h1>
+      <h1>Nos Fallaron</h1>
 
       <p>
         Actúe ahora: envíe un correo electrónico a todos los senadores y representantes
@@ -152,19 +159,10 @@
     </a>
   </main>
 
-  <!-- Recipient files must be in the same folder as this HTML file. -->
-  <script src="./senate-recipients.js"></script>
-  <script src="./house-recipients.js"></script>
+  <script src="../senate-recipients.js"></script>
+  <script src="../house-recipients.js"></script>
 
   <script>
-    /*
-      This mailer is filtered to send only to senators and representatives
-      who voted "A Favor".
-
-      Make sure senate-recipients.js and house-recipients.js use this exact vote value:
-      "vote": "A Favor"
-    */
-
     const CHAMBER_FILTER = "All";
     const VOTE_FILTER = "A Favor";
 
@@ -241,3 +239,4 @@ Respetuosamente,`;
   </script>
 </body>
 </html>
+```
