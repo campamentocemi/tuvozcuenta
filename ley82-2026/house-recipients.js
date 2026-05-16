@@ -150,11 +150,6 @@ const HOUSE_RECIPIENTS = [
     "vote": "En Contra"
   },
   {
-    "name": "Pérez Ortiz, Luis",
-    "email": "lperez@camara.pr.gov",
-    "vote": "A Favor"
-  },
-  {
     "name": "Pérez Ramírez, Tatiana",
     "email": "tperez@camara.pr.gov",
     "vote": "A Favor"
