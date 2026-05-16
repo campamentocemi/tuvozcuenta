@@ -13,7 +13,7 @@
   <link
     rel="icon"
     type="image/png"
-    href="../favicon.png"
+    href=".../favicon.png"
   >
 
   <!-- FONTS -->
@@ -26,15 +26,17 @@
   >
 
   <style>
+
     :root {
+
       --bg: #F5F7FA;
       --surface: #FFFFFF;
 
       --text: #1F2937;
       --text-light: #6B7280;
 
-      --danger: #D64545;
-      --danger-hover: #B83333;
+      --danger: #C4514B;
+      --danger-hover: #AE433E;
 
       --font-heading: "Manrope", sans-serif;
       --font-body: "Inter", sans-serif;
@@ -52,86 +54,165 @@
     }
 
     body {
+
       margin: 0;
+
       background: var(--bg);
+
       color: var(--text);
+
       font-family: var(--font-body);
+
       min-height: 100vh;
+
       display: flex;
       justify-content: center;
       align-items: center;
+
       padding: 24px;
     }
 
     main {
+
       width: 100%;
       max-width: var(--container);
+
       text-align: center;
     }
 
     .hero {
+
       background: var(--surface);
+
       border-radius: var(--radius);
-      padding: 56px 32px;
+
+      padding:
+        64px
+        40px;
+
       box-shadow: var(--shadow);
-      margin-bottom: 28px;
     }
 
     h1 {
-      margin: 0 0 22px;
+
+      margin: 0 0 28px;
+
       font-family: var(--font-heading);
-      font-size: clamp(2.8rem, 8vw, 5rem);
-      letter-spacing: -0.05em;
-      line-height: 1;
+
+      font-size: clamp(3.5rem, 9vw, 6rem);
+
+      letter-spacing: -0.07em;
+
+      line-height: 0.92;
+
+      color: var(--text);
     }
 
     .hero p {
-      margin: 0 auto 18px;
-      max-width: 720px;
+
+      margin:
+        0 auto
+        22px;
+
+      max-width: 760px;
+
       color: var(--text-light);
-      font-size: 1.15rem;
-      line-height: 1.7;
+
+      font-size:
+        clamp(1.2rem, 2.2vw, 1.6rem);
+
+      line-height: 1.75;
     }
 
     .hero .english {
-      font-size: 1rem;
+
+      font-size:
+        clamp(1rem, 2vw, 1.2rem);
+
       opacity: 0.92;
     }
 
-    .instruction {
-      margin: 0 auto 34px;
-      max-width: 720px;
+    .hero .instruction {
+
+      margin:
+        48px auto 0;
+
+      max-width: 760px;
+
+      padding-top: 32px;
+
+      border-top:
+        1px solid rgba(31,41,55,0.08);
     }
 
-    .instruction p {
-      margin: 0 0 14px;
-      font-size: clamp(1.15rem, 3vw, 1.5rem);
-      line-height: 1.6;
-      font-weight: 600;
+    .hero .instruction p {
+
+      margin:
+        0 0 14px;
+
+      font-size:
+        clamp(1.45rem, 3vw, 2.2rem);
+
+      line-height: 1.35;
+
+      font-weight: 700;
+
+      letter-spacing: -0.04em;
+
+      color: var(--text);
     }
 
-    .instruction .english {
-      font-size: 1rem;
+    .hero .instruction .english {
+
+      font-size:
+        clamp(1rem, 2vw, 1.15rem);
+
+      line-height: 1.7;
+
       color: var(--text-light);
+
       font-weight: 500;
+
+      opacity: 0.92;
     }
 
     .button {
+
       display: inline-flex;
+
       flex-direction: column;
+
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      width: min(640px, 100%);
-      padding: 22px 28px;
-      border-radius: 16px;
+
+      gap: 10px;
+
+      width: min(680px, 100%);
+
+      margin-top: 48px;
+
+      padding:
+        28px
+        32px;
+
+      border-radius: 18px;
+
       background: var(--danger);
+
       color: white;
+
       text-decoration: none;
-      font-size: 1.2rem;
+
+      font-size:
+        clamp(1.25rem, 2.5vw, 1.8rem);
+
       font-weight: 800;
+
+      letter-spacing: -0.03em;
+
       box-shadow:
-        0 8px 24px rgba(214,69,69,0.22);
+        0 12px 32px rgba(196,81,75,0.22);
+
       transition:
         transform 0.15s ease,
         background 0.15s ease,
@@ -139,45 +220,69 @@
     }
 
     .button:hover {
+
       background: var(--danger-hover);
+
       transform: translateY(-2px);
+
       box-shadow:
-        0 14px 32px rgba(214,69,69,0.28);
+        0 18px 38px rgba(196,81,75,0.28);
     }
 
     .button .english {
-      font-size: 0.95rem;
+
+      font-size:
+        clamp(0.95rem, 2vw, 1.15rem);
+
       font-weight: 600;
+
       opacity: 0.95;
     }
 
     .back-link {
+
       display: inline-block;
-      margin-top: 34px;
+
+      margin-top: 42px;
+
       color: var(--text-light);
+
       text-decoration: none;
+
       font-weight: 700;
+
+      font-size: 1rem;
+
       transition: color 0.15s ease;
     }
 
     .back-link:hover {
+
       color: var(--danger);
     }
 
     @media (max-width: 640px) {
+
       body {
+
         padding: 18px;
       }
 
       .hero {
-        padding: 42px 22px;
+
+        padding:
+          44px
+          24px;
       }
 
       .button {
-        padding: 20px 18px;
-        font-size: 1rem;
+
+        padding:
+          22px
+          18px;
       }
     }
+
   </style>
 </head>
 
@@ -192,53 +297,55 @@
       </h1>
 
       <p>
-        Actúe ahora: envíe un correo electrónico a todos los senadores
-        y representantes que votaron a favor del PC 310 / Ley 82-2026
-        exigiendo que deroguen esta ley y protejan las comunidades,
-        las costas y los derechos constitucionales de Puerto Rico.
+        Actúe ahora: envíe un correo electrónico
+        a todos los senadores y representantes
+        que votaron a favor del PC 310 / Ley 82-2026
+        exigiendo que deroguen esta ley y protejan
+        las comunidades, las costas y los derechos
+        constitucionales de Puerto Rico.
       </p>
 
       <p class="english">
-        Take action now: send an email to all senators and representatives
-        who voted for PC 310 / Ley 82-2026 demanding they repeal this law
-        and protect Puerto Rico's communities, coastlines, and constitutional rights.
+        Take action now: send an email to all senators
+        and representatives who voted for
+        PC 310 / Ley 82-2026 demanding they repeal
+        this law and protect Puerto Rico's communities,
+        coastlines, and constitutional rights.
       </p>
+
+      <div class="instruction">
+
+        <p>
+          Solo presiona <strong>ENVIAR</strong>
+          cuando se abra tu app de email.
+          ¡Tu voz cuenta!
+        </p>
+
+        <p class="english">
+          Just press <strong>SEND</strong>
+          when your email app opens.
+          Your voice counts!
+        </p>
+
+      </div>
+
+      <a
+        id="emailButton"
+        class="button"
+        href="#"
+      >
+
+        <span>
+          HAZ CLIC PARA ENVIAR EL EMAIL
+        </span>
+
+        <span class="english">
+          CLICK TO SEND THE EMAIL
+        </span>
+
+      </a>
 
     </section>
-
-    <div class="instruction">
-
-      <p>
-        Solo presiona <strong>ENVIAR</strong>
-        cuando se abra tu app de email.
-        ¡Tu voz cuenta! 
-      </p>
-
-      <p class="english">
-        Just press <strong>SEND</strong>
-        when your email app opens.
-        Your voice counts! 
-      </p>
-
-    </div>
-
-    <a
-      id="emailButton"
-      class="button"
-      href="#"
-    >
-
-      <span>
-         HAZ CLIC PARA ENVIAR EL EMAIL
-      </span>
-
-      <span class="english">
-        CLICK TO SEND THE EMAIL 
-      </span>
-
-    </a>
-
-    <br>
 
     <a
       class="back-link"
@@ -253,7 +360,9 @@
   <script src="../house-recipients.js"></script>
 
   <script>
+
     const CHAMBER_FILTER = "All";
+
     const VOTE_FILTER = "A Favor";
 
     const EMAIL_SUBJECT =
@@ -264,13 +373,13 @@
 
 Me dirijo a usted para expresar mi firme rechazo a la Ley 82-2026, aprobada mediante el Proyecto de la Cámara 310 y firmada el 13 de mayo de 2026 por la gobernadora Jenniffer González Colón.
 
-Esta ley representa un grave atentado contra el acceso a la justicia del pueblo puertorriqueño. Al imponer una fianza mínima equivalente al 10% del valor de cualquier proyecto para poder impugnarlo judicialmente, se convierte un derecho constitucional en un privilegio reservado para quienes poseen grandes recursos económicos. Un pescador, un residente costero o una organización comunitaria no tienen la capacidad de desembolsar cientos de miles — o incluso millones — de dólares simplemente para ser escuchados ante un tribunal. Los grandes desarrolladores sí. Eso no es certeza jurídica; es justicia condicionada por el poder económico.
+Esta ley representa un grave atentado contra el acceso a la justicia del pueblo puertorriqueño. Al imponer una fianza mínima equivalente al 10% del valor de cualquier proyecto para poder impugnarlo judicialmente, se convierte un derecho constitucional en un privilegio reservado para quienes poseen grandes recursos económicos.
 
-De igual forma, la ley permite el desarrollo de terrenos clasificados como Suelo Rústico Especialmente Protegido bajo la ambigua definición de "proyecto estratégico", sin establecer criterios objetivos, fundamento científico ni mecanismos adecuados de participación ciudadana. Esto no constituye desarrollo económico responsable; constituye discreción política al servicio de intereses privados.
+De igual forma, la ley permite el desarrollo de terrenos clasificados como Suelo Rústico Especialmente Protegido bajo la ambigua definición de "proyecto estratégico", sin establecer criterios objetivos, fundamento científico ni mecanismos adecuados de participación ciudadana.
 
 El Artículo II de la Constitución de Puerto Rico garantiza tanto el acceso a los tribunales como la protección de nuestros recursos naturales. La Ley 82-2026 vulnera ambos principios fundamentales.
 
-Por tal razón, exijo que se tomen medidas legislativas inmediatas para enmendar o derogar esta ley. Puerto Rico no es un negocio privado. Sus costas, sus terrenos protegidos y sus comunidades no están en venta.
+Por tal razón, exijo que se tomen medidas legislativas inmediatas para enmendar o derogar esta ley.
 
 Respetuosamente,`;
 
@@ -279,10 +388,12 @@ Respetuosamente,`;
     }
 
     function getSelectedRecipients() {
+
       if (
         typeof SENATE_RECIPIENTS === "undefined" ||
         typeof HOUSE_RECIPIENTS === "undefined"
       ) {
+
         showMailerError(
           "No se pudieron cargar los archivos senate-recipients.js y house-recipients.js."
         );
@@ -291,6 +402,7 @@ Respetuosamente,`;
       }
 
       const allRecipients = [
+
         ...SENATE_RECIPIENTS.map(
           (person) => ({
             ...person,
@@ -307,6 +419,7 @@ Respetuosamente,`;
       ];
 
       return allRecipients.filter((person) => {
+
         const chamberMatches =
           CHAMBER_FILTER === "All" ||
           person.chamber === CHAMBER_FILTER;
@@ -324,9 +437,12 @@ Respetuosamente,`;
     }
 
     function openEmail() {
-      const recipients = getSelectedRecipients();
+
+      const recipients =
+        getSelectedRecipients();
 
       if (recipients.length === 0) {
+
         showMailerError(
           "No hay destinatarios que coincidan con este filtro."
         );
@@ -347,15 +463,19 @@ Respetuosamente,`;
         "&body=" +
         encodeURIComponent(EMAIL_BODY);
 
-      window.location.href = mailtoLink;
+      window.location.href =
+        mailtoLink;
     }
 
     document
       .getElementById("emailButton")
       .addEventListener("click", function (event) {
+
         event.preventDefault();
+
         openEmail();
       });
+
   </script>
 
 </body>
