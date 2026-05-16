@@ -284,10 +284,27 @@
 
     @media (max-width: 640px) {
 
+      body {
+
+        padding: 18px;
+      }
+
       .container {
 
         padding:
           48px 22px 44px;
+      }
+
+      h1 {
+
+        font-size: clamp(3.1rem, 14vw, 5rem);
+      }
+
+      .subtitle {
+
+        margin-bottom: 42px;
+
+        font-size: 1.05rem;
       }
 
       .campaign-button {
@@ -303,9 +320,20 @@
         font-size: 1.5rem;
       }
 
+      .footer {
+
+        margin-top: 64px;
+      }
+
       .footer-logo {
 
         width: min(360px, 88vw);
+      }
+
+      .social-button {
+
+        width: 58px;
+        height: 58px;
       }
     }
 
@@ -322,7 +350,10 @@
       Participa en campañas activas y haz escuchar tu voz.
     </p>
 
-    <section class="campaigns">
+    <section
+      class="campaigns"
+      aria-label="Campañas activas"
+    >
 
       <a
         class="campaign-button"
@@ -336,7 +367,7 @@
         class="campaign-button"
         href="./PS697/"
       >
-        <span>PS697</span>
+        <span>PS 697</span>
         <span>→</span>
       </a>
 
@@ -373,6 +404,7 @@
         <a
           href="https://www.instagram.com/campamento.cemi.rincon"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="Instagram"
           class="social-button"
         >
@@ -387,6 +419,7 @@
         <a
           href="https://www.facebook.com/people/Campamento-Cem%C3%AD/61576438150730/"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="Facebook"
           class="social-button"
         >
