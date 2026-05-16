@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>Escríbele a la Cámara</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="../favicon.png"
+  >
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+  :root {
+    --bg: #F5F7FA;
+    --surface: #FFFFFF;
+    --text: #1F2937;
+    --text-light: #6B7280;
+    --success: #198fc9f1;
+    --success-hover: #167daf;
+    --border: #DBE3EC;
+    --font-heading: "Manrope", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --radius: 18px;
+    --shadow: 0 8px 28px rgba(0,0,0,0.08);
+    --container: 760px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  main {
+    width: 100%;
+    max-width: var(--container);
+    text-align: center;
+  }
+
+  .hero {
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 46px 30px;
+    box-shadow: var(--shadow);
+  }
+
+  h1 {
+    margin: 0 0 22px;
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    letter-spacing: -0.06em;
+    line-height: 0.95;
+    color: var(--text);
+  }
+
+  .hero p {
+    margin: 0 auto 18px;
+    max-width: 680px;
+    color: var(--text-light);
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .hero .english {
+    font-size: 0.88rem;
+    opacity: 0.9;
+  }
+
+  .hero .instruction {
+    margin: 30px auto 0;
+    max-width: 680px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(31,41,55,0.08);
+  }
+
+  .hero .instruction p {
+    margin: 0 0 12px;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--text);
+  }
+
+  .hero .instruction strong {
+    font-weight: 800;
+  }
+
+  .hero .instruction .english {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-light);
+    font-weight: 400;
+    opacity: 0.9;
+  }
+
+  .button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: min(500px, 100%);
+    margin-top: 38px;
+    padding: 20px 24px;
+    border-radius: 16px;
+    background: var(--success);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    box-shadow: 0 10px 26px rgba(25,143,201,0.18);
+    transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .button:hover {
+    background: var(--success-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(25,143,201,0.24);
+  }
+
+  .button .english {
+    font-size: 0.82rem;
+    font-weight: 600;
+    opacity: 0.92;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-top: 34px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.88rem;
+    transition: color 0.15s ease;
+  }
+
+  .back-link:hover {
+    color: var(--success);
+  }
+
+  @media (max-width: 640px) {
+    body {
+      padding: 14px;
+    }
+
+    .hero {
+      padding: 36px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      font-size: 0.95rem;
+    }
+
+    .hero .english {
+      font-size: 0.84rem;
+    }
+
+    .hero .instruction p {
+      font-size: 1rem;
+    }
+
+    .hero .instruction .english {
+      font-size: 0.84rem;
+    }
+
+    .button {
+      padding: 18px 16px;
+      font-size: 0.98rem;
+    }
+
+    .button .english {
+      font-size: 0.8rem;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="hero">
+      <h1>
+        Escríbele a la Cámara
+      </h1>
+
+      <p>
+        Actúa ahora: envía tu propio mensaje a todos los representantes de la Cámara sobre los temas que afectan a tu comunidad. Haz escuchar tu voz y exige acción de quienes te representan.
+      </p>
+
+      <p class="english">
+        Take action now: send your own message to every House representative about the issues affecting your community. Make your voice heard and demand action from those who represent you.
+      </p>
+
+      <div class="instruction">
+        <p>
+          Solo tienes que presionar <strong>ENVIAR</strong> cuando se abra tu app de email. Escribe tu mensaje en tus propias palabras. Los mensajes personales tienen más impacto. ¡Tu voz cuenta!
+        </p>
+
+        <p class="english">
+          You only have to press <strong>SEND</strong> when your email app opens. Write your message in your own words. Personal messages have more impact. Your voice counts!
+        </p>
+      </div>
+
+      <a
+        id="emailButton"
+        class="button"
+        href="#"
+      >
+        <span>
+          ENVIAR EMAIL AHORA
+        </span>
+
+        <span class="english">
+          SEND THE EMAIL NOW
+        </span>
+      </a>
+    </section>
+
+    <a
+      class="back-link"
+      href="../"
+    >
+      ← Volver
+    </a>
+  </main>
+
+  <script src="./house-recipients.js"></script>
+
+  <script>
+    const EMAIL_SUBJECT =
+      "";
+
+    const EMAIL_BODY =
+`Estimados Representantes de la Cámara de Puerto Rico:
+
+`;
+
+    function showMailerError(message) {
+      alert(message);
+    }
+
+    function openEmail() {
+      if (
+        typeof HOUSE_RECIPIENTS === "undefined"
+      ) {
+        showMailerError(
+          "No se pudo cargar el archivo house-recipients.js."
+        );
+
+        return;
+      }
+
+      const emails =
+        HOUSE_RECIPIENTS
+          .map((person) => person.email)
+          .filter(Boolean)
+          .join(",");
+
+      const mailtoLink =
+        "mailto:" +
+        emails +
+        "?subject=" +
+        encodeURIComponent(EMAIL_SUBJECT) +
+        "&body=" +
+        encodeURIComponent(EMAIL_BODY);
+
+      window.location.href =
+        mailtoLink;
+    }
+
+    document
+      .getElementById("emailButton")
+      .addEventListener("click", function (event) {
+        event.preventDefault();
+
+        openEmail();
+      });
+  </script>
+</body>
+</html>
