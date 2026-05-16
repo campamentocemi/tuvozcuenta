@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Campaña de Acción</title>
+  <title>Ley 82-2026 (PC 310)</title>
 
   <style>
     :root {
@@ -118,14 +118,19 @@
 
 <body>
   <main>
-    <!-- EDIT THIS SECTION FOR EACH BILL/ACTION -->
     <section class="editable-content">
       <h1>Deroga la Ley 82-2026</h1>
+
       <p>
-        Actúe ahora: envíe un correo electrónico a todos los senadores y representantes que votaron a favor del PC 310 / Ley 82-2026 exigiendo que deroguen esta ley y protejan las comunidades, las costas y los derechos constitucionales de Puerto Rico.
+        Actúe ahora: envíe un correo electrónico a todos los senadores y representantes
+        que votaron a favor del PC 310 / Ley 82-2026 exigiendo que deroguen esta ley
+        y protejan las comunidades, las costas y los derechos constitucionales de Puerto Rico.
       </p>
+
       <p class="english">
-        Take action now: send an email to all senators and representatives who voted for PC 310 / Ley 82-2026 demanding they repeal this law and protect Puerto Rico's communities, coastlines, and constitutional rights.
+        Take action now: send an email to all senators and representatives who voted for
+        PC 310 / Ley 82-2026 demanding they repeal this law and protect Puerto Rico's
+        communities, coastlines, and constitutional rights.
       </p>
     </section>
 
@@ -134,6 +139,7 @@
         Solo presiona <strong>ENVIAR</strong> cuando se abra tu app de email.
         ¡Tu voz cuenta! ✉️
       </p>
+
       <p class="english">
         Just press <strong>SEND</strong> when your email app opens.
         Your voice counts! ✉️
@@ -152,10 +158,11 @@
 
   <script>
     /*
-      EDIT THESE THREE VALUES FOR EACH BILL/ACTION
-      - Use "All", "Senate", or "House" for CHAMBER_FILTER.
-      - Use "All", "A Favor", "En Contra", "Ausente", or "Abstención" for VOTE_FILTER.
-      - Leave VOTE_FILTER as "All" to email everyone in the selected chamber.
+      This mailer is filtered to send only to senators and representatives
+      who voted "A Favor".
+
+      Make sure senate-recipients.js and house-recipients.js use this exact vote value:
+      "vote": "A Favor"
     */
 
     const CHAMBER_FILTER = "All";
