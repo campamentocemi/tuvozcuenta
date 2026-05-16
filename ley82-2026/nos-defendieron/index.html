@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nos Defendieron - Ley 82-2026</title>
+
+  <style>
+    :root {
+      --page-bg: #003322;
+      --text: #ffffff;
+      --button-bg: #e6534f;
+      --button-bg-hover: #cc3f3b;
+      --panel-bg: rgba(255, 255, 255, 0.08);
+      --panel-border: rgba(255, 255, 255, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--page-bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    main {
+      width: min(920px, 100%);
+      text-align: center;
+    }
+
+    .editable-content {
+      background: var(--panel-bg);
+      border: 1px solid var(--panel-border);
+      border-radius: 18px;
+      padding: clamp(1.25rem, 4vw, 3rem);
+      margin-bottom: 2rem;
+    }
+
+    .editable-content h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(2.25rem, 7vw, 5rem);
+      line-height: 1.05;
+      color: #ffc928;
+    }
+
+    .editable-content p {
+      margin: 0 auto 1rem;
+      max-width: 760px;
+      font-size: clamp(1.25rem, 3vw, 2.2rem);
+      line-height: 1.3;
+    }
+
+    .editable-content .english {
+      font-size: clamp(1.05rem, 2.5vw, 1.7rem);
+      opacity: 0.92;
+    }
+
+    .instruction {
+      margin: 2rem auto;
+      max-width: 850px;
+      font-size: clamp(1.8rem, 5vw, 4rem);
+      line-height: 1.22;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+    }
+
+    .instruction p {
+      margin: 0 0 0.75rem;
+    }
+
+    .instruction .english {
+      font-size: clamp(1.25rem, 3.8vw, 2.6rem);
+      opacity: 0.92;
+    }
+
+    .instruction strong {
+      font-weight: 800;
+    }
+
+    .button {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      width: min(620px, 100%);
+      padding: 1.15rem 1.5rem;
+      background-color: var(--button-bg);
+      color: #ffffff;
+      font-size: clamp(1.15rem, 3vw, 1.8rem);
+      font-weight: 800;
+      text-decoration: none;
+      border-radius: 14px;
+      letter-spacing: 0.02em;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+    }
+
+    .button .english {
+      font-size: clamp(0.95rem, 2.4vw, 1.25rem);
+      font-weight: 700;
+      opacity: 0.95;
+    }
+
+    .button:hover,
+    .button:focus {
+      background-color: var(--button-bg-hover);
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="editable-content">
+      <h1>Nos Defendieron</h1>
+
+      <p>
+        Actúe ahora: envíe un mensaje de agradecimiento a los senadores y representantes
+        que votaron en contra del PC 310 / Ley 82-2026 por defender las comunidades,
+        los terrenos protegidos y los derechos constitucionales de Puerto Rico.
+      </p>
+
+      <p class="english">
+        Take action now: send a message thanking the senators and representatives who voted
+        against PC 310 / Ley 82-2026 for standing up for Puerto Rico's communities,
+        protected lands, and constitutional rights.
+      </p>
+    </section>
+
+    <div class="instruction">
+      <p>
+        Solo presiona <strong>ENVIAR</strong> cuando se abra tu app de email.
+        ¡Tu voz cuenta! ✉️
+      </p>
+
+      <p class="english">
+        Just press <strong>SEND</strong> when your email app opens.
+        Your voice counts! ✉️
+      </p>
+    </div>
+
+    <a id="emailButton" class="button" href="#">
+      <span>📩 HAZ CLIC PARA ENVIAR EL EMAIL</span>
+      <span class="english">CLICK TO SEND THE EMAIL 📩</span>
+    </a>
+  </main>
+
+  <script src="../senate-recipients.js"></script>
+  <script src="../house-recipients.js"></script>
+
+  <script>
+    const CHAMBER_FILTER = "All";
+    const VOTE_FILTER = "En Contra";
+
+    const EMAIL_SUBJECT = "Gracias por votar en contra de la Ley 82-2026";
+
+    const EMAIL_BODY = `Estimado/a Senador/a o Representante:
+
+Me dirijo a usted para expresar mi más sincero agradecimiento por haber votado en contra del Proyecto de la Cámara 310, ahora Ley 82-2026.
+
+En un momento en que el acceso a la justicia, la protección ambiental y la participación ciudadana enfrentan amenazas reales, su voto representó un acto de responsabilidad y compromiso con el pueblo de Puerto Rico. Gracias por reconocer que imponer barreras económicas para impugnar proyectos y abrir terrenos protegidos a desarrollos bajo criterios ambiguos pone en riesgo tanto nuestros recursos naturales como nuestros derechos constitucionales.
+
+Su postura demuestra que aún existen servidores públicos dispuestos a defender las comunidades, las costas y el interés público por encima de intereses privados.
+
+Puerto Rico necesita más líderes que actúen con valentía, integridad y respeto hacia el bienestar colectivo. Gracias por dar ese paso.
+
+Respetuosamente,`;
+
+    function showMailerError(message) {
+      alert(message);
+    }
+
+    function getSelectedRecipients() {
+      if (
+        typeof SENATE_RECIPIENTS === "undefined" ||
+        typeof HOUSE_RECIPIENTS === "undefined"
+      ) {
+        showMailerError("No se pudieron cargar los archivos senate-recipients.js y house-recipients.js.");
+        return [];
+      }
+
+      const allRecipients = [
+        ...SENATE_RECIPIENTS.map((person) => ({ ...person, chamber: "Senate" })),
+        ...HOUSE_RECIPIENTS.map((person) => ({ ...person, chamber: "House" }))
+      ];
+
+      return allRecipients.filter((person) => {
+        const chamberMatches =
+          CHAMBER_FILTER === "All" || person.chamber === CHAMBER_FILTER;
+
+        const voteMatches =
+          VOTE_FILTER === "All" || person.vote === VOTE_FILTER;
+
+        return chamberMatches && voteMatches && person.email;
+      });
+    }
+
+    function openEmail() {
+      const recipients = getSelectedRecipients();
+
+      if (recipients.length === 0) {
+        showMailerError("No hay destinatarios que coincidan con este filtro.");
+        return;
+      }
+
+      const emails = recipients.map((person) => person.email).join(",");
+
+      const mailtoLink =
+        "mailto:" +
+        emails +
+        "?subject=" +
+        encodeURIComponent(EMAIL_SUBJECT) +
+        "&body=" +
+        encodeURIComponent(EMAIL_BODY);
+
+      window.location.href = mailtoLink;
+    }
+
+    document.getElementById("emailButton").addEventListener("click", function (event) {
+      event.preventDefault();
+      openEmail();
+    });
+  </script>
+</body>
+</html>
