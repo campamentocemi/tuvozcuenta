@@ -10,7 +10,7 @@ const SENATE_RECIPIENTS = [
     "party": "IND",
     "district": "Acumulación",
     "position": "Senadora por Acumulación",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Matías Rosario, Gregorio",
@@ -18,7 +18,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Acumulación",
     "position": "Portavoz - PNP / Senador por Acumulación",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Rivera Schatz, Thomas",
@@ -26,7 +26,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Acumulación",
     "position": "Presidente / Senador por Acumulación",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Soto Aguilú, Roxanna I.",
@@ -34,7 +34,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Acumulación",
     "position": "Senadora por Acumulación",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Toledo López, Ángel",
@@ -42,7 +42,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Acumulación",
     "position": "Senador por Acumulación",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Morales Rodríguez, Juan Oscar",
@@ -50,7 +50,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito I - San Juan",
     "position": "Portavoz Alterno - PNP / Senador por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Moran Trinidad, Nitza",
@@ -58,7 +58,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito I - San Juan",
     "position": "Senadora por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Padilla Alvelo, Migdalia",
@@ -66,7 +66,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito II - Bayamón",
     "position": "Senadora por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Ríos Santiago, Carmelo J.",
@@ -74,7 +74,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito II - Bayamón",
     "position": "Primer Vicepresidente / Senador por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "González López, Héctor Gabriel",
@@ -82,7 +82,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito III - Arecibo",
     "position": "Senador por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Pérez Soto, Brenda",
@@ -90,7 +90,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito III - Arecibo",
     "position": "Senadora por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Román Rodríguez, Karen M.",
@@ -98,7 +98,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito IV - Mayagüez-Aguadilla",
     "position": "Senadora por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Rosa Ramos, Jeison",
@@ -106,7 +106,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito IV - Mayagüez-Aguadilla",
     "position": "Senador por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Barlucea Rodríguez, Jamie",
@@ -114,7 +114,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito V - Ponce",
     "position": "Senadora por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Reyes Berríos, Wilmer",
@@ -122,7 +122,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito VI - Guayama",
     "position": "Senador por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Colón La Santa, Luis Daniel",
@@ -130,7 +130,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito VII - Humacao",
     "position": "Senador por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Soto Tolentino, Wanda",
@@ -138,7 +138,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito VII - Humacao",
     "position": "Senadora por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Jiménez Santoni, Marissa",
@@ -146,7 +146,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito VIII - Carolina",
     "position": "Segunda Vicepresidenta / Senadora por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Sánchez Álvarez, Héctor J.",
@@ -154,7 +154,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito VIII - Carolina",
     "position": "Senador por Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Santos Ortiz, Rafael",
@@ -162,7 +162,7 @@ const SENATE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito VI - Guayama",
     "position": "Senador por Distrito",
-    "vote": "Ausente"
+    "vote": ""
   },
   {
     "name": "Molina Pérez, Eliezer",
@@ -170,7 +170,7 @@ const SENATE_RECIPIENTS = [
     "party": "IND",
     "district": "Acumulación",
     "position": "Senador por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "González Costa, Adrián",
@@ -178,7 +178,7 @@ const SENATE_RECIPIENTS = [
     "party": "PIP",
     "district": "Acumulación",
     "position": "Portavoz Alterno - PIP / Senador por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Santiago Negrón, María de L.",
@@ -186,7 +186,7 @@ const SENATE_RECIPIENTS = [
     "party": "PIP",
     "district": "Acumulación",
     "position": "Portavoz - PIP / Senadora por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Álvarez Conde, Ada M.",
@@ -194,7 +194,7 @@ const SENATE_RECIPIENTS = [
     "party": "PPD",
     "district": "Acumulación",
     "position": "Senadora por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Dalmau Santiago, José L.",
@@ -202,7 +202,7 @@ const SENATE_RECIPIENTS = [
     "party": "PPD",
     "district": "Acumulación",
     "position": "Pasado Presidente / Senador por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Hernández Ortiz, Luis Javier",
@@ -210,7 +210,7 @@ const SENATE_RECIPIENTS = [
     "party": "PPD",
     "district": "Acumulación",
     "position": "Portavoz - PPD / Senador por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Santiago Rivera, José A.",
@@ -218,7 +218,7 @@ const SENATE_RECIPIENTS = [
     "party": "PPD",
     "district": "Acumulación",
     "position": "Senador por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "González Huertas, Marially",
@@ -226,6 +226,6 @@ const SENATE_RECIPIENTS = [
     "party": "PPD",
     "district": "Distrito V - Ponce",
     "position": "Portavoz Alterna - PPD / Senadora por Distrito",
-    "vote": "En Contra"
+    "vote": ""
   }
 ];
