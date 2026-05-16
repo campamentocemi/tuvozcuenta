@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TODO: Título de la campaña</title>
+
+  <style>
+    :root {
+      --page-bg: #003322;
+      --card-bg: #ffffff;
+      --text: #ffffff;
+      --card-text: #18332a;
+      --muted: #5f6b7a;
+      --button-bg: #ff4444;
+      --button-bg-hover: #cc0000;
+      --border: #d9dee5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      background-color: var(--page-bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .page {
+      width: min(980px, 100%);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .campaign-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto 1.5rem;
+    }
+
+    .controls {
+      background: var(--card-bg);
+      color: var(--card-text);
+      border-radius: 14px;
+      padding: 1.25rem;
+      text-align: left;
+      margin: 1.5rem auto 0;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+    }
+
+    .controls h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.35rem;
+    }
+
+    select,
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 170px;
+      resize: vertical;
+    }
+
+    .summary {
+      margin: 1rem 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    a.button,
+    button.secondary {
+      display: inline-block;
+      padding: 1rem 1.25rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    a.button {
+      background-color: var(--button-bg);
+      color: #ffffff;
+      border: 0;
+    }
+
+    a.button:hover,
+    a.button:focus {
+      background-color: var(--button-bg-hover);
+      outline: none;
+    }
+
+    button.secondary {
+      background: #eef4ff;
+      color: #174ea6;
+      border: 1px solid #c7d8ff;
+    }
+
+    .recipient-preview {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      background: #f7f7f4;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--muted);
+      max-height: 170px;
+      overflow: auto;
+      font-size: 0.9rem;
+      white-space: pre-wrap;
+    }
+
+    .note {
+      margin-top: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <!-- Put your campaign image in the same folder and update the src. -->
+    <img class="campaign-image" src="./YOUR-IMAGE-FILENAME.png" alt="TODO: Descripción de la imagen de campaña" />
+
+    <section class="controls" aria-labelledby="email-heading">
+      <h2 id="email-heading">Enviar correo</h2>
+
+      <div class="field-grid">
+        <div>
+          <label for="chamberFilter">Cámara</label>
+          <select id="chamberFilter">
+            <option value="All">Todos</option>
+            <option value="Senate">Senado</option>
+            <option value="House">Cámara de Representantes</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="voteFilter">Filtro por voto</label>
+          <select id="voteFilter">
+            <option value="All">Todos</option>
+            <option value="A Favor">A Favor</option>
+            <option value="En Contra">En Contra</option>
+            <option value="Ausente">Ausente</option>
+            <option value="Abstención">Abstención</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="emailSubject">Asunto</label>
+      <input id="emailSubject" type="text" value="TODO: Escribe el asunto del correo" />
+
+      <label for="emailBody" style="margin-top: 1rem;">Mensaje</label>
+      <textarea id="emailBody">TODO: Escribe aquí el cuerpo del correo.
+
+Puedes reemplazar este texto con el mensaje de la campaña.</textarea>
+
+      <p class="summary" id="recipientSummary"></p>
+
+      <div class="button-row">
+        <a id="emailButton" class="button" href="#">📩 HAZ CLIC PARA ENVIAR EL EMAIL</a>
+        <button id="copyRecipientsButton" class="secondary" type="button">Copiar destinatarios</button>
+      </div>
+
+      <div class="recipient-preview" id="recipientPreview"></div>
+
+      <p class="note">
+        Nota: algunos apps de email limitan la cantidad de destinatarios en un solo correo.
+        Si el botón no abre bien, usa "Copiar destinatarios" y pega la lista manualmente.
+      </p>
+    </section>
+  </main>
+
+  <!-- Keep these two JS files in the same bill folder as this HTML file. -->
+  <script src="./senate-recipients.js"></script>
+  <script src="./house-recipients.js"></script>
+
+  <script>
+    const ALL_RECIPIENTS = [
+      ...SENATE_RECIPIENTS.map((person) => ({ ...person, chamber: "Senate" })),
+      ...HOUSE_RECIPIENTS.map((person) => ({ ...person, chamber: "House" }))
+    ];
+
+    const chamberFilter = document.getElementById("chamberFilter");
+    const voteFilter = document.getElementById("voteFilter");
+    const emailSubject = document.getElementById("emailSubject");
+    const emailBody = document.getElementById("emailBody");
+    const emailButton = document.getElementById("emailButton");
+    const copyRecipientsButton = document.getElementById("copyRecipientsButton");
+    const recipientSummary = document.getElementById("recipientSummary");
+    const recipientPreview = document.getElementById("recipientPreview");
+
+    function getSelectedRecipients() {
+      const selectedChamber = chamberFilter.value;
+      const selectedVote = voteFilter.value;
+
+      return ALL_RECIPIENTS.filter((person) => {
+        const chamberMatches = selectedChamber === "All" || person.chamber === selectedChamber;
+        const voteMatches = selectedVote === "All" || person.vote === selectedVote;
+        return chamberMatches && voteMatches && person.email;
+      });
+    }
+
+    function updateEmailLink() {
+      const recipients = getSelectedRecipients();
+      const emails = recipients.map((person) => person.email).join(",");
+      const subject = emailSubject.value.trim();
+      const body = emailBody.value.trim();
+
+      const mailtoLink =
+        "mailto:" +
+        emails +
+        "?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+
+      emailButton.setAttribute("href", mailtoLink);
+
+      recipientSummary.textContent = recipients.length + " destinatario(s) seleccionado(s).";
+
+      recipientPreview.textContent = recipients
+        .map((person) => person.name + " <" + person.email + "> - " + person.chamber + " - " + (person.vote || "Sin voto asignado"))
+        .join("\n");
+    }
+
+    chamberFilter.addEventListener("change", updateEmailLink);
+    voteFilter.addEventListener("change", updateEmailLink);
+    emailSubject.addEventListener("input", updateEmailLink);
+    emailBody.addEventListener("input", updateEmailLink);
+
+    copyRecipientsButton.addEventListener("click", async () => {
+      const recipients = getSelectedRecipients();
+      const emails = recipients.map((person) => person.email).join(",");
+      try {
+        await navigator.clipboard.writeText(emails);
+        copyRecipientsButton.textContent = "Copiado";
+        setTimeout(() => {
+          copyRecipientsButton.textContent = "Copiar destinatarios";
+        }, 1500);
+      } catch (error) {
+        alert("No se pudo copiar automáticamente. Puedes copiar la lista desde la vista previa.");
+      }
+    });
+
+    updateEmailLink();
+  </script>
+</body>
+</html>
