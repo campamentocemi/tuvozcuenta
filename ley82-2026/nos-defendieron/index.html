@@ -13,7 +13,7 @@
   <link
     rel="icon"
     type="image/png"
-    href="..../favicon.png"
+    href="../favicon.png"
   >
 
   <!-- FONTS -->
@@ -37,7 +37,7 @@
       --text-light: #6B7280;
 
       --success: #198fc9f1;
-      --success-hover: #198fc9f1;
+      --success-hover: #167daf;
 
       --border: #DBE3EC;
 
@@ -92,77 +92,93 @@
       border-radius: var(--radius);
 
       padding:
-        56px
-        32px;
+        64px
+        40px;
 
       box-shadow: var(--shadow);
-
-      margin-bottom: 28px;
     }
 
     h1 {
 
-      margin: 0 0 22px;
+      margin: 0 0 28px;
 
       font-family: var(--font-heading);
 
-      font-size: clamp(2.8rem, 8vw, 5rem);
+      font-size: clamp(3.5rem, 9vw, 6rem);
 
-      letter-spacing: -0.05em;
+      letter-spacing: -0.07em;
 
-      line-height: 1;
+      line-height: 0.92;
+
+      color: var(--text);
     }
 
     .hero p {
 
       margin:
         0 auto
-        18px;
+        22px;
 
-      max-width: 720px;
+      max-width: 760px;
 
       color: var(--text-light);
 
-      font-size: 1.15rem;
+      font-size:
+        clamp(1.2rem, 2.2vw, 1.6rem);
 
-      line-height: 1.7;
+      line-height: 1.75;
     }
 
     .hero .english {
 
-      font-size: 1rem;
+      font-size:
+        clamp(1rem, 2vw, 1.2rem);
 
       opacity: 0.92;
     }
 
-    .instruction {
+    .hero .instruction {
 
       margin:
-        0 auto
-        34px;
+        48px auto 0;
 
-      max-width: 720px;
+      max-width: 760px;
+
+      padding-top: 32px;
+
+      border-top:
+        1px solid rgba(31,41,55,0.08);
     }
 
-    .instruction p {
+    .hero .instruction p {
 
       margin:
         0 0 14px;
 
-      font-size: clamp(1.15rem, 3vw, 1.5rem);
+      font-size:
+        clamp(1.45rem, 3vw, 2.2rem);
 
-      line-height: 1.6;
+      line-height: 1.35;
 
-      font-weight: 600;
+      font-weight: 700;
+
+      letter-spacing: -0.04em;
+
+      color: var(--text);
     }
 
-    .instruction .english {
+    .hero .instruction .english {
 
-      font-size: 1rem;
+      font-size:
+        clamp(1rem, 2vw, 1.15rem);
+
+      line-height: 1.7;
 
       color: var(--text-light);
 
       font-weight: 500;
+
+      opacity: 0.92;
     }
 
     .button {
@@ -174,15 +190,17 @@
       align-items: center;
       justify-content: center;
 
-      gap: 8px;
+      gap: 10px;
 
-      width: min(640px, 100%);
+      width: min(680px, 100%);
+
+      margin-top: 48px;
 
       padding:
-        22px
-        28px;
+        28px
+        32px;
 
-      border-radius: 16px;
+      border-radius: 18px;
 
       background: var(--success);
 
@@ -190,12 +208,15 @@
 
       text-decoration: none;
 
-      font-size: 1.2rem;
+      font-size:
+        clamp(1.25rem, 2.5vw, 1.8rem);
 
       font-weight: 800;
 
+      letter-spacing: -0.03em;
+
       box-shadow:
-        0 8px 24px rgba(31,157,85,0.22);
+        0 12px 32px rgba(25,143,201,0.22);
 
       transition:
         transform 0.15s ease,
@@ -210,12 +231,13 @@
       transform: translateY(-2px);
 
       box-shadow:
-        0 14px 32px rgba(31,157,85,0.28);
+        0 18px 38px rgba(25,143,201,0.28);
     }
 
     .button .english {
 
-      font-size: 0.95rem;
+      font-size:
+        clamp(0.95rem, 2vw, 1.15rem);
 
       font-weight: 600;
 
@@ -226,13 +248,15 @@
 
       display: inline-block;
 
-      margin-top: 34px;
+      margin-top: 42px;
 
       color: var(--text-light);
 
       text-decoration: none;
 
       font-weight: 700;
+
+      font-size: 1rem;
 
       transition: color 0.15s ease;
     }
@@ -252,17 +276,15 @@
       .hero {
 
         padding:
-          42px
-          22px;
+          44px
+          24px;
       }
 
       .button {
 
         padding:
-          20px
+          22px
           18px;
-
-        font-size: 1rem;
       }
     }
 
@@ -294,41 +316,39 @@
         protected lands, and constitutional rights.
       </p>
 
+      <div class="instruction">
+
+        <p>
+          Solo presiona <strong>ENVIAR</strong>
+          cuando se abra tu app de email.
+          ¡Tu voz cuenta!
+        </p>
+
+        <p class="english">
+          Just press <strong>SEND</strong>
+          when your email app opens.
+          Your voice counts!
+        </p>
+
+      </div>
+
+      <a
+        id="emailButton"
+        class="button"
+        href="#"
+      >
+
+        <span>
+          HAZ CLIC PARA ENVIAR EL EMAIL
+        </span>
+
+        <span class="english">
+          CLICK TO SEND THE EMAIL
+        </span>
+
+      </a>
+
     </section>
-
-    <div class="instruction">
-
-      <p>
-        Solo presiona <strong>ENVIAR</strong>
-        cuando se abra tu app de email.
-        ¡Tu voz cuenta! 
-      </p>
-
-      <p class="english">
-        Just press <strong>SEND</strong>
-        when your email app opens.
-        Your voice counts! 
-      </p>
-
-    </div>
-
-    <a
-      id="emailButton"
-      class="button"
-      href="#"
-    >
-
-      <span>
-         HAZ CLIC PARA ENVIAR EL EMAIL
-      </span>
-
-      <span class="english">
-        CLICK TO SEND THE EMAIL 
-      </span>
-
-    </a>
-
-    <br>
 
     <a
       class="back-link"
