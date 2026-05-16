@@ -104,11 +104,11 @@
 
       font-family: var(--font-heading);
 
-      font-size: clamp(2.8rem, 8vw, 5rem);
+      font-size: clamp(3.5rem, 8vw, 6rem);
 
-      letter-spacing: -0.05em;
+      letter-spacing: -0.06em;
 
-      line-height: 1;
+      line-height: 0.95;
     }
 
     .hero p {
@@ -149,7 +149,7 @@
       flex-direction: column;
       justify-content: space-between;
 
-      min-height: 320px;
+      min-height: 420px;
 
       padding: 32px;
 
@@ -185,11 +185,11 @@
 
       display: inline-block;
 
-      margin-bottom: 20px;
+      margin-bottom: 24px;
 
       padding:
         8px
-        14px;
+        16px;
 
       border-radius: 999px;
 
@@ -209,13 +209,23 @@
 
     .action-card h2 {
 
-      margin: 0 0 14px;
+      margin: 0 0 20px;
 
       font-family: var(--font-heading);
 
-      font-size: clamp(2rem, 5vw, 3rem);
+      font-size: clamp(2.4rem, 5vw, 4rem);
 
-      line-height: 1.05;
+      line-height: 0.92;
+
+      letter-spacing: -0.06em;
+
+      min-height: 2.1em;
+
+      max-width: 8ch;
+
+      display: flex;
+
+      align-items: flex-end;
     }
 
     .action-card p {
@@ -224,16 +234,16 @@
 
       font-size: 1.05rem;
 
-      line-height: 1.6;
+      line-height: 1.7;
 
       color: var(--text-light);
     }
 
     .action-card .english {
 
-      font-size: 0.92rem;
+      font-size: 0.95rem;
 
-      line-height: 1.6;
+      line-height: 1.7;
 
       color: var(--text-light);
 
@@ -242,11 +252,11 @@
 
     .card-link {
 
-      margin-top: 32px;
+      margin-top: 40px;
 
       font-weight: 700;
 
-      font-size: 1rem;
+      font-size: 1.25rem;
 
       color: var(--primary);
     }
@@ -287,6 +297,11 @@
       .action-card {
 
         min-height: auto;
+      }
+
+      .action-card h2 {
+
+        max-width: 100%;
       }
     }
 
