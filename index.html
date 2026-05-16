@@ -201,21 +201,34 @@
 
     .footer-divider {
 
-  width: 100%;
-  max-width: 540px;
+      width: 100%;
+      max-width: 540px;
 
-  height: 1px;
+      height: 1px;
 
-  margin-bottom: 4px;
+      margin-bottom: 4px;
 
-  background:
-    linear-gradient(
-      to right,
-      transparent,
-      #DBE3EC,
-      transparent
-    );
-}
+      background:
+        linear-gradient(
+          to right,
+          transparent,
+          #DBE3EC,
+          transparent
+        );
+    }
+
+    .footer-brand-row {
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 28px;
+
+      flex-wrap: wrap;
+    }
 
     .footer-logo {
 
@@ -337,6 +350,11 @@
         width: 58px;
         height: 58px;
       }
+
+      .footer-brand-row {
+
+        flex-direction: column;
+      }
     }
 
   </style>
@@ -395,43 +413,47 @@
 
       <div class="footer-divider"></div>
 
-      <img
-        class="footer-logo"
-        src="./campamento-cemi-logo.png"
-        alt="Campamento CEMI"
-      >
+      <div class="footer-brand-row">
 
-      <div class="socials">
-
-        <a
-          href="https://www.instagram.com/campamento.cemi.rincon"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-          class="social-button"
+        <img
+          class="footer-logo"
+          src="./campamento-cemi-logo.png"
+          alt="Campamento CEMI"
         >
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3zm10.5 1a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
-          </svg>
-        </a>
 
-        <a
-          href="https://www.facebook.com/people/Campamento-Cem%C3%AD/61576438150730/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Facebook"
-          class="social-button"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="currentColor"
+        <div class="socials">
+
+          <a
+            href="https://www.instagram.com/campamento.cemi.rincon"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            class="social-button"
           >
-            <path d="M13 22v-8h3l1-4h-4V8c0-1.2.3-2 2-2h2V2.5C16.6 2.2 15.4 2 14 2c-3 0-5 1.8-5 5.2V10H6v4h3v8h4z"/>
-          </svg>
-        </a>
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3zm10.5 1a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.facebook.com/people/Campamento-Cem%C3%AD/61576438150730/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            class="social-button"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M13 22v-8h3l1-4h-4V8c0-1.2.3-2 2-2h2V2.5C16.6 2.2 15.4 2 14 2c-3 0-5 1.8-5 5.2V10H6v4h3v8h4z"/>
+            </svg>
+          </a>
+
+        </div>
 
       </div>
 
