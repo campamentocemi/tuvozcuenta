@@ -1,3 +1,4 @@
+```js
 // House recipients
 // Generated from your compiled spreadsheet.
 // For each new bill/action, update the "vote" value as needed.
@@ -10,7 +11,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PD",
     "district": "Acumulación",
     "position": "Portavoz - PD / Representante por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Gutiérrez Colón, Adriana",
@@ -18,7 +19,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PIP",
     "district": "Acumulación",
     "position": "Portavoz Alterna - PIP / Representante por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Lebrón Robles, Nelie",
@@ -26,7 +27,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PIP",
     "district": "Acumulación",
     "position": "Representante por Acumulación",
-    "vote": "Ausente"
+    "vote": ""
   },
   {
     "name": "Márquez Lebrón, Denis",
@@ -34,7 +35,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PIP",
     "district": "Acumulación",
     "position": "Portavoz - PIP / Representante por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Aponte Hernández, José F.",
@@ -42,7 +43,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Acumulación",
     "position": "Representante por Acumulación",
-    "vote": "Abstención"
+    "vote": ""
   },
   {
     "name": "Carlo Acosta, Emilio",
@@ -50,7 +51,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 20 - Cabo Rojo, Hormigueros, San Germán",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Charbonier Chinea, Eddie",
@@ -58,7 +59,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 1 - San Juan",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Colón Rodríguez, Joe",
@@ -66,7 +67,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 22 - Adjuntas, Lares, Utuado, Jayuya y Ciales",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Del Valle Correa, Wanda",
@@ -74,7 +75,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 38 - Canóvanas, Carolina y Trujillo Alto",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Estevez Vélez, Sergio E.",
@@ -82,7 +83,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 40 - Carolina",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Franqui Atiles, Joel I.",
@@ -90,7 +91,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 15 - Hatillo, Camuy y Quebradillas",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "González Aguayo, Elinette",
@@ -98,7 +99,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 11 - Vega Alta, Vega Baja y Dorado",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "González González, Odalys",
@@ -106,7 +107,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 18 - Aguada, Rincón, Moca y Añasco",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Hernández Concepción, José",
@@ -114,7 +115,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 3 - San Juan",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Jiménez Torres, Luis Josean",
@@ -122,7 +123,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 26 - Orocovis, Barranquitas, Coamo, Corozal y Villalba",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Lebrón Rodríguez, Yashira",
@@ -130,7 +131,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 8 - Bayamón",
     "position": "Vice-Presidenta / Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "López Román, Roberto",
@@ -138,7 +139,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 31 - Caguas y Gurabo",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Martínez Vázquez, Omayra Milagros",
@@ -146,7 +147,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 21 - Yauco, Guánica, Maricao, Lajas, Sabana Grande y Las Marías",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Medina Calderón, Carmen M",
@@ -154,7 +155,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 37 - Río Grande, Loíza, Canóvanas",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Méndez Núñez, Carlos J.",
@@ -162,7 +163,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 36 - Culebra, Vieques, Río Grande, Fajardo, Ceiba y Luquillo",
     "position": "Presidente / Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Morey Noble, Ángel",
@@ -170,7 +171,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 6 - Guaynabo, Cataño y Bayamón",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Muriel Sánchez , Christian",
@@ -178,7 +179,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 34 - Yabucoa, Maunabo, Patillas y San Lorenzo",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Navarro Suárez, Jorge L.",
@@ -186,7 +187,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 5 - Aguas Buenas, San Juan y Guaynabo",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Nieves Rosario, Jerry",
@@ -194,7 +195,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 13 - Manatí, Florida, Barceloneta y Arecibo",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Ocasio Ramos, Ricardo Rey",
@@ -202,7 +203,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 2 - San Juan",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Pacheco Burgos, Félix Emmanuel",
@@ -210,7 +211,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 9 - Bayamón, Toa Alta",
     "position": "Representante de Distrito",
-    "vote": "Ausente"
+    "vote": ""
   },
   {
     "name": "Parés Otero, Víctor L.",
@@ -218,7 +219,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 4 - San Juan",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Peña Ramírez, Ángel R.",
@@ -226,7 +227,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 33 - San Lorenzo, Juncos y Las Piedras",
     "position": "Vice-Presidente / Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Pérez Cordero, José Jesús",
@@ -234,7 +235,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Acumulación",
     "position": "Representante por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Pérez Ortiz, Luis",
@@ -242,7 +243,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 7 - Bayamón",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Pérez Ramírez, Tatiana",
@@ -250,7 +251,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Acumulación",
     "position": "Representante por Acumulación",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Ramos Rivera, María de Lourdes",
@@ -258,7 +259,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Acumulación",
     "position": "Representante por Acumulación",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Robles Rivera, Edgar",
@@ -266,7 +267,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 14 - Arecibo y Hatillo",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Rodríguez Aguiló, Gabriel",
@@ -274,7 +275,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Acumulación",
     "position": "Representante por Acumulación",
-    "vote": "Ausente"
+    "vote": ""
   },
   {
     "name": "Rodríguez Torres, Ensol Alexis",
@@ -282,7 +283,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 23 - Ponce, Yauco, Peñuelas, Guayanilla y Adjuntas",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Román López, Wilson J.",
@@ -290,7 +291,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 17 - Aguadilla y Moca",
     "position": "Portavoz Alterno - PNP / Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Roque Gracia, Axel Francisco",
@@ -298,7 +299,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 28 - Comerío, Corozal, Naranjito y Barranquitas",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Sanabria Colón , Fernando",
@@ -306,7 +307,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 30 - Arroyo, Guayama, Salinas y Santa Isabel",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Santiago Guzman, Pedro Julio",
@@ -314,7 +315,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Distrito 10 - Cataño y Toa Baja",
     "position": "Representante de Distrito",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Torres Zamora, José E.",
@@ -322,7 +323,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PNP",
     "district": "Acumulación",
     "position": "Portavoz - PNP / Representante por Acumulación",
-    "vote": "A Favor"
+    "vote": ""
   },
   {
     "name": "Feliciano Sánchez, Edgardo",
@@ -330,7 +331,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Distrito 12 - Morovis, Manatí y Vega Baja",
     "position": "Representante de Distrito",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Ferrer Santiago, Héctor E.",
@@ -338,7 +339,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Acumulación",
     "position": "Portavoz - PPD / Representante por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Figueroa Acevedo, Reinaldo",
@@ -346,7 +347,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Distrito 16 - Isabela, San Sebastián, Aguadilla",
     "position": "Representante de Distrito",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Fourquet Cordero, Ángel A.",
@@ -354,7 +355,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Distrito 24 - Ponce",
     "position": "Representante de Distrito",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Hau, Gretchen",
@@ -362,7 +363,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Distrito 29 - Cidra y Cayey",
     "position": "Representante de Distrito",
-    "vote": "Ausente"
+    "vote": ""
   },
   {
     "name": "Higgins Cuadrado, Sol Yamiz",
@@ -370,7 +371,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Distrito 35 - Las Piedras, Humacao y Naguabo",
     "position": "Representante de Distrito",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Martínez Soto, Estrella",
@@ -378,7 +379,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Distrito 27 - Aibonito, Coamo, Juana Díaz, Santa Isabel y Salinas",
     "position": "Representante de Distrito",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Rivera Ruiz de Porras, Roberto",
@@ -386,7 +387,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Distrito 39 - Carolina y Trujillo Alto",
     "position": "Representante de Distrito",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Rosas Vargas, Lilibeth",
@@ -394,7 +395,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Distrito 19 - Mayagüez y San Germán",
     "position": "Representante de Distrito",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Torres Cruz, Ramón",
@@ -402,7 +403,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Acumulación",
     "position": "Representante por Acumulación",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Torres García, Domingo J.",
@@ -410,7 +411,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Distrito 25 - Jayuya, Ponce y Juana Díaz",
     "position": "Portavoz Alterno - PPD / Representante de Distrito",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Varela Fernández, José M.",
@@ -418,7 +419,7 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Distrito 32 - Caguas",
     "position": "Representante de Distrito",
-    "vote": "En Contra"
+    "vote": ""
   },
   {
     "name": "Vargas Laureano, Swanny",
@@ -426,6 +427,6 @@ const HOUSE_RECIPIENTS = [
     "party": "PPD",
     "district": "Acumulación",
     "position": "Representante por Acumulación",
-    "vote": "Ausente"
+    "vote": ""
   }
 ];
