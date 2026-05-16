@@ -184,13 +184,25 @@ Por tal razón, exijo que se tomen medidas legislativas inmediatas para enmendar
 
 Respetuosamente,`;
 
-    const ALL_RECIPIENTS = [
-      ...SENATE_RECIPIENTS.map((person) => ({ ...person, chamber: "Senate" })),
-      ...HOUSE_RECIPIENTS.map((person) => ({ ...person, chamber: "House" }))
-    ];
+    function showMailerError(message) {
+      alert(message);
+    }
 
     function getSelectedRecipients() {
-      return ALL_RECIPIENTS.filter((person) => {
+      if (
+        typeof SENATE_RECIPIENTS === "undefined" ||
+        typeof HOUSE_RECIPIENTS === "undefined"
+      ) {
+        showMailerError("No se pudieron cargar los archivos senate-recipients.js y house-recipients.js.");
+        return [];
+      }
+
+      const allRecipients = [
+        ...SENATE_RECIPIENTS.map((person) => ({ ...person, chamber: "Senate" })),
+        ...HOUSE_RECIPIENTS.map((person) => ({ ...person, chamber: "House" }))
+      ];
+
+      return allRecipients.filter((person) => {
         const chamberMatches =
           CHAMBER_FILTER === "All" || person.chamber === CHAMBER_FILTER;
 
@@ -201,18 +213,31 @@ Respetuosamente,`;
       });
     }
 
-    const recipients = getSelectedRecipients();
-    const emails = recipients.map((person) => person.email).join(",");
+    function openEmail() {
+      const recipients = getSelectedRecipients();
 
-    const mailtoLink =
-      "mailto:" +
-      emails +
-      "?subject=" +
-      encodeURIComponent(EMAIL_SUBJECT) +
-      "&body=" +
-      encodeURIComponent(EMAIL_BODY);
+      if (recipients.length === 0) {
+        showMailerError("No hay destinatarios que coincidan con este filtro.");
+        return;
+      }
 
-    document.getElementById("emailButton").setAttribute("href", mailtoLink);
+      const emails = recipients.map((person) => person.email).join(",");
+
+      const mailtoLink =
+        "mailto:" +
+        emails +
+        "?subject=" +
+        encodeURIComponent(EMAIL_SUBJECT) +
+        "&body=" +
+        encodeURIComponent(EMAIL_BODY);
+
+      window.location.href = mailtoLink;
+    }
+
+    document.getElementById("emailButton").addEventListener("click", function (event) {
+      event.preventDefault();
+      openEmail();
+    });
   </script>
 </body>
 </html>
